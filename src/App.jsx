@@ -6,7 +6,7 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 
 // Pages
-import Home from "./pages/home/Home";
+import Main from "./pages/main/Main";
 
 // React Router DOM
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
@@ -15,12 +15,12 @@ function App() {
   const routes = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element: <Main />,
     },
   ]);
 
   return (
-    <div className="App">
+    <div className="app">
       <Header />
       <RouterProvider router={routes} />
       <Footer />

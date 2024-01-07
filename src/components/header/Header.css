@@ -1,0 +1,42 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  padding: 2rem 0;
+}
+.header nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+}
+
+.logo h3 {
+  font-family: "Lobster", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.nav li {
+  list-style: none;
+  margin-right: 1.5rem;
+  overflow: hidden;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+.nav li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.3s;
+}
