@@ -5,9 +5,6 @@ function Header() {
     <header className="header">
       <div className="container">
         <nav>
-          <div className="logo">
-            <h3>Sardorbek Olimov</h3>
-          </div>
           <ul className="nav">
             <li>
               <a href="#">Home</a>

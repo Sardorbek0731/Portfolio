@@ -3,24 +3,45 @@
   align-items: center;
   height: 100vh;
   position: relative;
+  background-size: cover;
 }
 
 .myName h3 {
   font-family: "Lobster", sans-serif;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 400;
-  margin-bottom: 1.4rem;
+  margin-bottom: 2rem;
 }
 .myName h1 {
   font-family: "Lobster", sans-serif;
-  font-size: 3.2rem;
+  font-size: 4.2rem;
   font-weight: 400;
-  margin-bottom: 1.4rem;
+  position: relative;
 }
-.myName h2 {
+
+.animate-name {
+  position: relative;
   font-family: "Lobster", sans-serif;
-  font-size: 1.7rem;
-  font-weight: 500;
+  color: rgb(127, 53, 4);
+}
+.cursor {
+  position: absolute;
+  right: -0.7rem;
+  top: 50%;
+  transform: translateY(-47%);
+  height: 73%;
+  transition: all 0.5s;
+  width: 2px;
+  background-color: black;
+  animation: cursor 0.55s infinite;
+}
+.animate-name.stop::before {
+  animation: none;
+}
+@keyframes cursor {
+  50% {
+    opacity: 0;
+  }
 }
 
 .socialNetwork {
@@ -30,15 +51,15 @@
 }
 .socialNetwork a {
   text-decoration: none;
-  margin-right: 0.9rem;
+  margin-right: 1rem;
 }
 .socialNetwork a:last-child {
   margin-right: 0;
 }
 .socialNetwork a svg {
-  color: black;
-  width: 1.35rem;
-  height: 1.35rem;
+  color: rgb(127, 53, 4);
+  width: 1.4rem;
+  height: 1.4rem;
   transition: all 0.3s;
 }
 .socialNetwork a svg:hover {

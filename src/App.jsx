@@ -1,6 +1,9 @@
 // CSS
 import "./App.css";
 
+// Images
+import homeBg from "./assets/images/home-bg.jpg";
+
 // Components
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
@@ -21,6 +24,8 @@ function App() {
 
   return (
     <div className="app">
+      <img src={homeBg} alt="Home Background Image" />
+      <div className="blur"></div>
       <Header />
       <RouterProvider router={routes} />
       <Footer />

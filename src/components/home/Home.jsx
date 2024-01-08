@@ -1,12 +1,56 @@
+// CSS
 import "./Home.css";
 
+// Hooks
+import { useEffect, useState } from "react";
+
 function Home() {
+  const words = ["Sardorbek Olimov", "Frontend Developer"];
+  const [animName, setAnimName] = useState("");
+  const [stopAnim, setStopAnim] = useState(false);
+
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  const typeEffect = () => {
+    const currentWord = words[wordIndex];
+    const currentChar = currentWord.substring(0, charIndex);
+    setAnimName(currentChar);
+    setStopAnim(true);
+
+    if (!isDeleting && charIndex < currentWord.length) {
+      charIndex++;
+
+      setTimeout(typeEffect, 130);
+    } else if (isDeleting && charIndex > 0) {
+      charIndex--;
+
+      setTimeout(typeEffect, 100);
+    } else {
+      isDeleting = !isDeleting;
+      wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
+
+      setStopAnim(false);
+      setTimeout(typeEffect, 1500);
+    }
+  };
+
+  useEffect(() => {
+    typeEffect();
+  }, []);
+
   return (
     <div className="home">
       <div className="myName">
         <h3>Hello,</h3>
-        <h1>{"I'm Sardorbek Olimov"}</h1>
-        <h2>Frontend Developer && UI Designer</h2>
+        <h1>
+          <span>{"I'm "}</span>
+          <span className={stopAnim ? "animate-name stop" : "animate-name"}>
+            {animName}
+          </span>
+          <span className="cursor"></span>
+        </h1>
       </div>
       <div className="socialNetwork">
         <a
