@@ -20,22 +20,19 @@
 }
 
 .animate-name {
-  position: relative;
   font-family: "Lobster", sans-serif;
   color: rgb(127, 53, 4);
 }
 .cursor {
   position: absolute;
-  right: -0.7rem;
+  right: -0.8rem;
   top: 50%;
-  transform: translateY(-47%);
-  height: 73%;
-  transition: all 0.5s;
-  width: 2px;
-  background-color: black;
-  animation: cursor 0.55s infinite;
+  transform: translateY(-46%);
+  height: 74%;
+  border-left: 2px solid black;
+  animation: cursor 0.6s infinite;
 }
-.animate-name.stop::before {
+.cursor.stop {
   animation: none;
 }
 @keyframes cursor {

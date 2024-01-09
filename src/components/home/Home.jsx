@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 function Home() {
   const words = ["Sardorbek Olimov", "Frontend Developer"];
   const [animName, setAnimName] = useState("");
-  const [stopAnim, setStopAnim] = useState(false);
+  const [stopAnim, setStopAnim] = useState(true);
 
   let wordIndex = 0;
   let charIndex = 0;
@@ -22,17 +22,17 @@ function Home() {
     if (!isDeleting && charIndex < currentWord.length) {
       charIndex++;
 
-      setTimeout(typeEffect, 130);
+      setTimeout(typeEffect, 140);
     } else if (isDeleting && charIndex > 0) {
       charIndex--;
 
-      setTimeout(typeEffect, 100);
+      setTimeout(typeEffect, 70);
     } else {
       isDeleting = !isDeleting;
       wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
 
       setStopAnim(false);
-      setTimeout(typeEffect, 1500);
+      setTimeout(typeEffect, 2000);
     }
   };
 
@@ -46,10 +46,8 @@ function Home() {
         <h3>Hello,</h3>
         <h1>
           <span>{"I'm "}</span>
-          <span className={stopAnim ? "animate-name stop" : "animate-name"}>
-            {animName}
-          </span>
-          <span className="cursor"></span>
+          <span className="animate-name">{animName}</span>
+          <span className={stopAnim ? "cursor stop" : "cursor"}></span>
         </h1>
       </div>
       <div className="socialNetwork">
