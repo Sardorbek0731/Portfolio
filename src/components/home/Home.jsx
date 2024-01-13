@@ -5,7 +5,7 @@ import "./Home.css";
 import { useEffect, useState } from "react";
 
 function Home() {
-  const words = ["Sardorbek Olimov", "Frontend Developer"];
+  const words = ["Sardorbek Olimov", "Programmer", "Designer"];
   const [animName, setAnimName] = useState("");
   const [stopAnim, setStopAnim] = useState(true);
 
@@ -22,17 +22,17 @@ function Home() {
     if (!isDeleting && charIndex < currentWord.length) {
       charIndex++;
 
-      setTimeout(typeEffect, 140);
+      setTimeout(typeEffect, 150);
     } else if (isDeleting && charIndex > 0) {
       charIndex--;
 
-      setTimeout(typeEffect, 70);
+      setTimeout(typeEffect, 60);
     } else {
       isDeleting = !isDeleting;
       wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
 
       setStopAnim(false);
-      setTimeout(typeEffect, 2000);
+      setTimeout(typeEffect, 2500);
     }
   };
 
