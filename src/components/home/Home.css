@@ -7,23 +7,23 @@
 }
 
 .myName h3 {
-  font-family: "Lobster", sans-serif;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 400;
   margin-bottom: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .myName h1 {
   display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   align-items: center;
-  font-family: "Lobster", sans-serif;
-  font-size: 4.2rem;
+  font-size: 3.8rem;
   font-weight: 400;
   position: relative;
 }
 
 .animate-name {
-  color: rgb(127, 53, 4);
-  margin-left: 1.3rem;
+  color: #9b633e;
+  margin-left: 1.1rem;
 }
 .cursor {
   position: absolute;
@@ -43,7 +43,7 @@
 
 .socialNetwork {
   position: absolute;
-  bottom: 2rem;
+  bottom: 3rem;
   left: 0;
 }
 .socialNetwork a {
@@ -54,7 +54,7 @@
   margin-right: 0;
 }
 .socialNetwork a svg {
-  color: rgb(127, 53, 4);
+  color: #9b633e;
   width: 1.4rem;
   height: 1.4rem;
   transition: all 0.3s;

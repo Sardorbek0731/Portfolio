@@ -41,7 +41,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="home">
+    <section className="home" id="home">
       <div className="myName">
         <h3>Hello,</h3>
         <h1>
@@ -116,7 +116,7 @@ function Home() {
           </svg>
         </a>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -5,7 +5,7 @@
   right: 0;
   width: 100%;
   background-color: transparent;
-  padding: 2rem 0;
+  padding: 3rem 0;
   z-index: 1;
 }
 
@@ -31,5 +31,5 @@
   user-select: none;
 }
 .nav li a:hover {
-  color: rgb(127, 53, 4);
+  color: #9b633e;
 }

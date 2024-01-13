@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="app">
-      <img src={homeBg} alt="Home Background Image" />
+      <img src={homeBg} className="homeBg" alt="Home Background Image" />
       <div className="blur"></div>
       <Header />
       <RouterProvider router={routes} />
