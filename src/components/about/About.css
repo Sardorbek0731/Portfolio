@@ -1,1 +1,39 @@
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
+}
 
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.13);
+  padding: 2.3rem;
+  border-radius: 1.8rem;
+}
+.myImage img {
+  width: 14rem;
+  height: auto;
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
+}
+.myName h4 {
+  font-size: 1.55rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.frontendDev {
+  background-color: #e2e2e2;
+  padding: 0.6rem 1.2rem;
+  border-radius: 3rem;
+}
+.frontendDev h2 {
+  font-size: 1rem;
+  color: #51545d;
+  font-weight: 300;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
