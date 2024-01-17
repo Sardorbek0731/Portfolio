@@ -1,7 +1,7 @@
 // CSS
-import "./Portfolio.css";
+import "./Service.css";
 
-function Portfolio() {
+function Service() {
   return (
     <section className="portfolio" id="portfolio">
       <div className="title">
@@ -12,4 +12,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default Service;

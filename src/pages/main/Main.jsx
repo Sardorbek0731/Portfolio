@@ -3,7 +3,6 @@ import "./Main.css";
 
 // Components
 import Home from "../../components/home/Home";
-import About from "../../components/about/About";
 import Portfolio from "../../components/portfolio/Portfolio";
 
 function Main() {
@@ -11,7 +10,6 @@ function Main() {
     <main className="main">
       <div className="container">
         <Home />
-        <About />
         <Portfolio />
       </div>
     </main>

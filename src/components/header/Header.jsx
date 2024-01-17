@@ -1,3 +1,4 @@
+// CSS
 import "./Header.css";
 
 function Header() {
@@ -10,10 +11,10 @@ function Header() {
               <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#">About</a>
             </li>
             <li>
-              <a href="#portfolio">Portfolio</a>
+              <a href="#">Blog</a>
             </li>
             <li>
               <a href="#">Contact</a>

@@ -43,7 +43,7 @@ function Home() {
   return (
     <section className="home" id="home">
       <div className="myName">
-        <h3>Hello,</h3>
+        <h3>Hi,</h3>
         <h1>
           <span>{"I'm "}</span>
           <span className="animate-name">{animName}</span>
