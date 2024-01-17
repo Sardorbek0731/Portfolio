@@ -7,7 +7,7 @@ function Header() {
       <div className="container">
         <nav>
           <ul className="nav">
-            <li>
+            <li className="active">
               <a href="#home">Home</a>
             </li>
             <li>

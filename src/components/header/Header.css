@@ -15,21 +15,45 @@
 
 .nav li {
   list-style: none;
-  margin-right: 1.5rem;
-  overflow: hidden;
+  margin-right: 1.6rem;
+  position: relative;
+}
+.nav li.active a {
+  color: #90542d;
 }
 .nav li:last-child {
   margin-right: 0;
 }
+.nav li::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -0.4rem;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.nav li.active::before {
+  visibility: visible;
+  width: 1.4rem;
+}
+.nav li:hover::before {
+  visibility: visible;
+  width: 1.4rem;
+}
+.nav li.active::before {
+  background-color: #a6663b;
+}
+
 .nav li a {
   text-decoration: none;
   color: black;
-  font-weight: 400;
-  font-size: 1.03rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-family: "Nunito", sans-serif;
   transition: all 0.2s;
   user-select: none;
-}
-.nav li a:hover {
-  color: #90542d;
 }

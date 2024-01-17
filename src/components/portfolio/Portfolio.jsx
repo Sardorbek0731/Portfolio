@@ -3,11 +3,13 @@ import "./Portfolio.css";
 
 function Portfolio() {
   return (
-    <section className="portfolio" id="portfolio">
-      <div className="title">
-        <h1>Portfolio</h1>
+    <section className="portfolio">
+      <div className="container">
+        <div className="title">
+          <h1>Portfolio</h1>
+        </div>
+        <div className="portfolioImages"></div>
       </div>
-      <div className="portfolioImages"></div>
     </section>
   );
 }
