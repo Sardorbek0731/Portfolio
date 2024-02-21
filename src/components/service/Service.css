@@ -1,0 +1,37 @@
+.serviceItem {
+  width: 17.5rem;
+  background-color: rgb(243, 247, 255);
+  padding: 1.3rem 1.7rem;
+  border-radius: 0.3rem;
+}
+
+.serviceItem:nth-child(1) {
+  border-top: 3px solid rgb(88, 96, 177);
+}
+.serviceItem:nth-child(2) {
+  border-top: 3px solid rgb(51, 187, 137);
+}
+.serviceItem:nth-child(3) {
+  border-top: 3px solid rgb(255, 221, 0);
+}
+.serviceItem:nth-child(4) {
+  border-top: 3px solid rgb(182, 22, 218);
+}
+
+.serviceItem_title img {
+  width: 3.9rem;
+  height: 3.9rem;
+  object-fit: cover;
+}
+
+.serviceItem_title h3 {
+  font-size: 1.25rem;
+  margin: 0.9rem 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.serviceItem_body p {
+  font-size: 0.975rem;
+  color: rgb(82, 82, 96);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -38,22 +38,16 @@
 }
 .nav li.active::before {
   visibility: visible;
-  width: 1.4rem;
-}
-.nav li:hover::before {
-  visibility: visible;
-  width: 1.4rem;
-}
-.nav li.active::before {
-  background-color: #a6663b;
+  width: 40%;
+  background-color: #90542d;
 }
 
 .nav li a {
   text-decoration: none;
   color: black;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   font-family: "Nunito", sans-serif;
-  transition: all 0.2s;
+  transition: all 0.3s;
   user-select: none;
 }
