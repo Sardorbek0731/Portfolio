@@ -12,21 +12,21 @@
   border-top: 3px solid rgb(51, 187, 137);
 }
 .serviceItem:nth-child(3) {
-  border-top: 3px solid rgb(255, 221, 0);
+  border-top: 3px solid rgb(255, 132, 0);
 }
 .serviceItem:nth-child(4) {
   border-top: 3px solid rgb(182, 22, 218);
 }
 
 .serviceItem_title img {
-  width: 3.9rem;
-  height: 3.9rem;
+  width: 3.5rem;
+  height: 3.5rem;
   object-fit: cover;
 }
 
 .serviceItem_title h3 {
   font-size: 1.25rem;
-  margin: 0.9rem 0;
+  margin: 1.1rem 0;
   font-family: "Nunito", sans-serif;
 }
 

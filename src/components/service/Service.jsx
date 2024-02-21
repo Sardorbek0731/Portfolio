@@ -22,7 +22,7 @@ function Service() {
             </div>
             <div className="serviceItem_body">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                Lorem ipsum dolor sit consectetur adipisicing elit. Maiores
                 aliquam delectus.
               </p>
             </div>
