@@ -7,7 +7,35 @@ import paint from "../../assets/icons/paint.png";
 import apps from "../../assets/icons/apps.png";
 import bot from "../../assets/icons/bot.png";
 
+// react-i18next
+import { useTranslation } from "react-i18next";
+
 function Service() {
+  const { t } = useTranslation();
+
+  const services = [
+    {
+      icon: apps,
+      title: "",
+      description: "",
+    },
+    {
+      icon: files,
+      title: "",
+      description: "",
+    },
+    {
+      icon: paint,
+      title: "",
+      description: "",
+    },
+    {
+      icon: bot,
+      title: "",
+      description: "",
+    },
+  ];
+
   return (
     <section className="service">
       <div className="container">
@@ -15,7 +43,7 @@ function Service() {
           <h1>Service</h1>
         </div>
         <div className="services flex alignCenter justifyBetween wf-100">
-          <div className="serviceItem">
+          {/* <div className="serviceItem">
             <div className="serviceItem_title">
               <img src={files} alt="Pencil image" />
               <h3>Web Programm</h3>
@@ -62,7 +90,7 @@ function Service() {
                 odio a odit dolores.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
