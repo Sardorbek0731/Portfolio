@@ -6,10 +6,10 @@
 }
 
 .serviceItem:nth-child(1) {
-  border-top: 3px solid rgb(88, 96, 177);
+  border-top: 3px solid rgb(51, 187, 137);
 }
 .serviceItem:nth-child(2) {
-  border-top: 3px solid rgb(51, 187, 137);
+  border-top: 3px solid rgb(88, 96, 177);
 }
 .serviceItem:nth-child(3) {
   border-top: 3px solid rgb(255, 115, 0);
@@ -26,12 +26,11 @@
 
 .serviceItem_title h3 {
   font-size: 1.3rem;
-  margin: 1.4rem 0 0.8rem 0;
+  margin: 1.3rem 0 0.8rem 0;
   font-family: "Nunito", sans-serif;
 }
 
 .serviceItem_body p {
-  font-size: 0.98rem;
   font-weight: 400;
   color: rgb(82, 82, 96);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

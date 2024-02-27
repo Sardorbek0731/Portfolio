@@ -1,5 +1,5 @@
 // CSS
-import "./Service.css";
+import "./Services.css";
 
 // Icons
 import files from "../../assets/icons/files.png";
@@ -16,23 +16,23 @@ function Service() {
   const services = [
     {
       icon: apps,
-      title: "",
-      description: "",
+      title: "Mobile Apps",
+      description: "I can create any type of mobile app you want.",
     },
     {
       icon: files,
-      title: "",
-      description: "",
+      title: "Web Programm",
+      description: "I can build a website for you in no time.",
     },
     {
       icon: paint,
-      title: "",
-      description: "",
+      title: "UI / UX Design",
+      description: "I can create a copy of the website layout.",
     },
     {
       icon: bot,
-      title: "",
-      description: "",
+      title: "Telegram Bots",
+      description: "I can create a telegram bot for you.",
     },
   ];
 
@@ -43,54 +43,19 @@ function Service() {
           <h1>Service</h1>
         </div>
         <div className="services flex alignCenter justifyBetween wf-100">
-          {/* <div className="serviceItem">
-            <div className="serviceItem_title">
-              <img src={files} alt="Pencil image" />
-              <h3>Web Programm</h3>
-            </div>
-            <div className="serviceItem_body">
-              <p>
-                Lorem ipsum dolor sit consectetur adipisicing elit. Maiores
-                aliquam delectus.
-              </p>
-            </div>
-          </div>
-          <div className="serviceItem">
-            <div className="serviceItem_title">
-              <img src={apps} alt="Pencil image" />
-              <h3>Mobile Apps</h3>
-            </div>
-            <div className="serviceItem_body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-                aliquam delectus.
-              </p>
-            </div>
-          </div>
-          <div className="serviceItem">
-            <div className="serviceItem_title">
-              <img src={paint} alt="Pencil image" />
-              <h3>UI / UX Design</h3>
-            </div>
-            <div className="serviceItem_body">
-              <p>
-                Lorem dolor sit amet consectetur adipisicing elit. Maiores
-                delectus odio.
-              </p>
-            </div>
-          </div>
-          <div className="serviceItem">
-            <div className="serviceItem_title">
-              <img src={bot} alt="Pencil image" />
-              <h3>Telegram Bots</h3>
-            </div>
-            <div className="serviceItem_body">
-              <p>
-                Lorem ipsum consectetur adipisicing. Maiores aliquam delectus
-                odio a odit dolores.
-              </p>
-            </div>
-          </div> */}
+          {services.map((item, index) => {
+            return (
+              <div className="serviceItem" key={index}>
+                <div className="serviceItem_title">
+                  <img src={item.icon} alt="Pencil image" />
+                  <h3>{item.title}</h3>
+                </div>
+                <div className="serviceItem_body">
+                  <p>{item.description}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
