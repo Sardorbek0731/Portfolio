@@ -3,7 +3,7 @@ import "./Header.css";
 
 function Header() {
   return (
-    <header className="header flex justifyCenter">
+    <header className="header">
       <div className="container">
         <nav>
           <ul className="nav">

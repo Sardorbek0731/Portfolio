@@ -36,6 +36,11 @@ function Service() {
       title: "Telegram Bots",
       description: "I can create a telegram bot for you.",
     },
+    {
+      icon: bot,
+      title: "Telegram Bots",
+      description: "I can create a telegram bot for you.",
+    },
   ];
 
   return (
@@ -44,20 +49,22 @@ function Service() {
         <div className="title">
           <h1>Service</h1>
         </div>
-        <div className="services flex alignCenter justifyBetween wf-100">
-          {services.map((item, index) => {
-            return (
-              <div className="serviceItem" key={index}>
-                <div className="serviceItem_title">
-                  <img src={item.icon} alt="Pencil image" />
-                  <h3>{item.title}</h3>
+        <div className="services flex alignCenter wf-100">
+          <div className="servicesItems flex alignCenter justifyBetween">
+            {services.map((item, index) => {
+              return (
+                <div className="serviceItem" key={index}>
+                  <div className="serviceItem_title">
+                    <img src={item.icon} alt="Pencil image" />
+                    <h3>{item.title}</h3>
+                  </div>
+                  <div className="serviceItem_body">
+                    <p>{item.description}</p>
+                  </div>
                 </div>
-                <div className="serviceItem_body">
-                  <p>{item.description}</p>
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
 
           <div className="slider flex alignCenter justifyBetween">
             <div className="slideBlur slideBlur_left flex alignCenter">
