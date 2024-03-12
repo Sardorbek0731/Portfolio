@@ -20,7 +20,8 @@ html {
 
 .container {
   position: relative;
-  padding: 0 10.5rem;
+  width: 80%;
+  overflow: hidden;
 }
 
 .app {

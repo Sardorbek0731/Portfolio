@@ -6,6 +6,8 @@ import files from "../../assets/icons/files.png";
 import paint from "../../assets/icons/paint.png";
 import apps from "../../assets/icons/apps.png";
 import bot from "../../assets/icons/bot.png";
+import left from "../../assets/icons/left.png";
+import right from "../../assets/icons/right.png";
 
 // react-i18next
 import { useTranslation } from "react-i18next";
@@ -21,7 +23,7 @@ function Service() {
     },
     {
       icon: files,
-      title: "Web Programm",
+      title: "Web Sites",
       description: "I can build a website for you in no time.",
     },
     {
@@ -56,6 +58,19 @@ function Service() {
               </div>
             );
           })}
+
+          <div className="slider flex alignCenter justifyBetween">
+            <div className="slideBlur slideBlur_left flex alignCenter">
+              <div className="leftBtn slideBtn flex alignCenter justifyCenter">
+                <img src={left} alt="Left arrow" />
+              </div>
+            </div>
+            <div className="slideBlur slideBlur_right flex alignCenter">
+              <div className="rightBtn slideBtn flex alignCenter justifyCenter">
+                <img src={right} alt="Right arrow" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

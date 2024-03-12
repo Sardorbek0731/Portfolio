@@ -1,3 +1,8 @@
+.services {
+  position: relative;
+  margin-left: 3.2rem;
+}
+
 .serviceItem {
   width: 17.7rem;
   background-color: rgba(243, 247, 255, 0.8);
@@ -32,6 +37,61 @@
 
 .serviceItem_body p {
   font-weight: 400;
-  color: rgb(82, 82, 96);
+  font-size: 1.03rem;
+  color: rgb(93, 93, 108);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Slider */
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-3.2rem);
+}
+.leftBtn {
+  left: 0;
+}
+.rightBtn {
+  right: 0;
+}
+
+.slider .slideBtn {
+  width: 2.8rem;
+  height: 2.8rem;
+  background-color: rgb(231, 231, 231);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.slider .slideBtn:hover {
+  background-color: rgb(215, 215, 215);
+}
+
+.slider img {
+  width: 1.3rem;
+  height: auto;
+}
+.rightBtn img {
+  margin-left: 0.08rem;
+}
+
+.slideBlur {
+  width: 5.2rem;
+  height: 100%;
+}
+.slideBlur_left {
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0.1)
+  );
+}
+.slideBlur_right {
+  justify-content: flex-end;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgb(255, 255, 255)
+  );
 }
