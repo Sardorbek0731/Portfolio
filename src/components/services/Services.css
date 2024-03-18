@@ -4,7 +4,6 @@
 }
 
 .servicesItems {
-  margin-left: 4rem;
   transition: all 0.3s;
 }
 
@@ -26,18 +25,18 @@
   border-top: 3px solid rgb(255, 115, 0);
 }
 .serviceItem:nth-child(4) {
-  border-top: 3px solid rgb(133, 22, 218);
+  border-top: 3px solid #8516da;
 }
 .serviceItem:nth-child(5) {
-  border-top: 3px solid rgb(255, 0, 0);
+  border-top: 3px solid #ff00cc;
 }
 .serviceItem:nth-child(6) {
-  border-top: 3px solid rgb(255, 0, 204);
+  border-top: 3px solid red;
 }
 
 .serviceItem_title img {
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 3.5rem;
+  height: 3.5rem;
   object-fit: cover;
 }
 
@@ -59,7 +58,9 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  justify-content: space-between;
 }
+
 .leftBtn {
   left: 0;
 }
@@ -80,14 +81,6 @@
   background-color: rgb(229, 229, 229);
 }
 
-.slideBtn:disabled {
-  cursor: no-drop;
-  opacity: 0.3;
-}
-.slideBtn:disabled:hover {
-  background-color: rgb(239, 239, 239);
-}
-
 .slideBtn img {
   width: 1.3rem;
   height: auto;
@@ -97,10 +90,13 @@
 }
 
 .slideBlur {
-  width: 7rem;
+  width: 10rem;
   height: 100%;
+  position: absolute;
+  user-select: none;
 }
 .slideBlur_left {
+  left: 0;
   background: linear-gradient(
     to right,
     rgb(255, 255, 255),
@@ -108,6 +104,7 @@
   );
 }
 .slideBlur_right {
+  right: 0;
   justify-content: flex-end;
   background: linear-gradient(
     to right,

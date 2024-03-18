@@ -11,13 +11,13 @@ function Header() {
               <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#service">Service</a>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <a href="#portfolio">Portfolio</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#">Pages</a>
             </li>
           </ul>
         </nav>

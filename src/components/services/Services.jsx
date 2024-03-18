@@ -6,6 +6,8 @@ import files from "../../assets/icons/files.png";
 import paint from "../../assets/icons/paint.png";
 import apps from "../../assets/icons/apps.png";
 import bot from "../../assets/icons/bot.png";
+import logo from "../../assets/icons/logo.png";
+import api from "../../assets/icons/api.png";
 import left from "../../assets/icons/left.png";
 import right from "../../assets/icons/right.png";
 
@@ -36,9 +38,9 @@ function Service() {
       description: "I can create a copy of the website layout.",
     },
     {
-      icon: paint,
-      title: "UI / UX Design",
-      description: "I can create a copy of the website layout.",
+      icon: logo,
+      title: "Logotive",
+      description: "I can create a logotive for your buseness.",
     },
     {
       icon: bot,
@@ -46,14 +48,14 @@ function Service() {
       description: "I can create a telegram bot for you.",
     },
     {
-      icon: bot,
-      title: "Telegram Bots",
-      description: "I can create a telegram bot for you.",
+      icon: api,
+      title: "Personal API",
+      description: "I can create a personal API for you.",
     },
   ];
 
   return (
-    <section className="service">
+    <section className="service" id="service">
       <div className="container">
         <div className="title">
           <h1>Service</h1>
@@ -61,7 +63,7 @@ function Service() {
         <div className="services flex alignCenter wf-100">
           <div
             className="servicesItems flex alignCenter justifyBetween"
-            style={{ transform: `translateX(${-sliderIndex * 16.7}rem)` }}
+            style={{ transform: `translateX(${-sliderIndex * 13.83}rem)` }}
           >
             {services.map((item, index) => {
               return (
@@ -78,11 +80,16 @@ function Service() {
             })}
           </div>
 
-          <div className="slider flex alignCenter justifyBetween">
-            <div className="slideBlur slideBlur_left flex alignCenter">
+          <div className="slider flex alignCenter">
+            <div
+              className={
+                sliderIndex == 0
+                  ? "hidden"
+                  : "slideBlur slideBlur_left flex alignCenter"
+              }
+            >
               <button
                 className="leftBtn slideBtn flex alignCenter justifyCenter"
-                disabled={sliderIndex == 0 ? true : false}
                 onClick={() => {
                   setSliderIndex(sliderIndex - 1);
                 }}
@@ -90,10 +97,15 @@ function Service() {
                 <img src={left} alt="Left arrow" />
               </button>
             </div>
-            <div className="slideBlur slideBlur_right flex alignCenter">
+            <div
+              className={
+                sliderIndex > services.length - 4
+                  ? "hidden"
+                  : "slideBlur slideBlur_right flex alignCenter"
+              }
+            >
               <button
                 className="rightBtn slideBtn flex alignCenter justifyCenter"
-                disabled={sliderIndex > services.length - 4 ? true : false}
                 onClick={() => {
                   setSliderIndex(sliderIndex + 1);
                 }}
